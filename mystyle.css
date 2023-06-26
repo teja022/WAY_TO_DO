@@ -1,0 +1,153 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#new-task-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#new-task-submit {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#new-task-submit:hover {
+  background-color: #45a049;
+}
+
+main {
+  padding: 20px;
+}
+
+.task-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+}
+
+.task .content {
+  flex-grow: 1;
+}
+
+.task .text {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 16px;
+}
+
+.task .actions {
+  display: flex;
+  gap: 5px;
+}
+
+.task .complete,
+.task .delete {
+  padding: 10px 20px;
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task .complete:hover,
+.task .delete:hover {
+  background-color: #c62828;
+}
+
+.task .complete {
+  background-color: #4caf50;
+}
+
+.task .complete:hover {
+  background-color: #45a049;
+}
+
+.task .edit {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task .edit:hover {
+  background-color: #0056b3;
+}
+
+.task .delete {
+  background-color: #e53935;
+}
+
+.task .delete:hover {
+  background-color: #c62828;
+}
